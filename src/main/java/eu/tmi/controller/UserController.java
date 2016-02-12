@@ -25,8 +25,9 @@ public class UserController {
     List<User> users = repository.findAll();
     
     model.addAttribute("users", users );
-    return "users";
+    return "users/list";
   }
+  
   @RequestMapping(path="/users/add")
   public void add() {
     System.out.println( repository );

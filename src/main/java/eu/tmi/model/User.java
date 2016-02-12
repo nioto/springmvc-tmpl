@@ -13,8 +13,6 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 
-import org.hibernate.annotations.Fetch;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
