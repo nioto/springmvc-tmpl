@@ -12,6 +12,8 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
+import javax.persistence.UniqueConstraint;
+import javax.validation.constraints.Size;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -26,6 +28,8 @@ public class User extends BaseEntity {
 
   private static final long serialVersionUID = 3939839238361182149L;
 
+  @UniqueConstraint
+  @Size( min=4, max=16)
   String login;
   String password;
 

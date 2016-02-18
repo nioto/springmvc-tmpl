@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 @SuppressWarnings("unchecked")
 public abstract class AbstractFacade<T> {
 
-  @PersistenceContext(unitName = "entityManager")
+  @PersistenceContext
   private EntityManager entityManager;
 
   private Class<T> entityClass;
