@@ -28,7 +28,11 @@ public class User extends BaseEntity {
 
   private static final long serialVersionUID = 3939839238361182149L;
 
+<<<<<<< HEAD
   @Column(unique=true, nullable=false)
+=======
+  @UniqueConstraint
+>>>>>>> dc3c0d5cffe0d91618c1e054faae919a607526db
   @Size( min=4, max=16)
   String login;
   String password;
